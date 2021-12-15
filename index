@@ -7,9 +7,12 @@
 		<title>Document</title>
 		<style>
 			.grid {
+				width: 800px;
+				margin: auto;
 				display: grid;
 				grid-gap: 15px;
-				grid-template-areas: "a b c d" "e f g g" "h h h i" "j k k l" "j m m l";
+				grid-template-areas: "a a b b" "c d e f" "g d h f" "i i h f";
+				grid-gap: 30px 10px;
 			}
 			.item-a {
 				grid-area: a;
@@ -32,23 +35,11 @@
 			.item-g {
 				grid-area: g;
 			}
-			.item-a {
+			.item-h {
 				grid-area: h;
 			}
-			.item-b {
+			.item-i {
 				grid-area: i;
-			}
-			.item-c {
-				grid-area: j;
-			}
-			.item-d {
-				grid-area: k;
-			}
-			.item-e {
-				grid-area: l;
-			}
-			.item-f {
-				grid-area: m;
 			}
 			.item {
 				background-color: rgb(151, 153, 152);
@@ -67,10 +58,6 @@
 			<div class="item item-g"></div>
 			<div class="item item-h"></div>
 			<div class="item item-i"></div>
-			<div class="item item-j"></div>
-			<div class="item item-k"></div>
-			<div class="item item-l"></div>
-			<div class="item item-m"></div>
 		</div>
 	</body>
 </html>
