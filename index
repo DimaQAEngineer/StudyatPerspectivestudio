@@ -6,27 +6,71 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<style>
-			.el {
+			.grid {
 				display: grid;
-				grid-template-columns: 1fr 1fr 1fr;
-				grid-template-rows: 50px 50px;
-				grid-gap: 10px;
+				grid-gap: 15px;
+				grid-template-areas: "a b c d" "e f g g" "h h h i" "j k k l" "j m m l";
 			}
-			.elem {
-				text-align: center;
-				background-color: rgb(20, 255, 184);
-				padding: 10px;
+			.item-a {
+				grid-area: a;
+			}
+			.item-b {
+				grid-area: b;
+			}
+			.item-c {
+				grid-area: c;
+			}
+			.item-d {
+				grid-area: d;
+			}
+			.item-e {
+				grid-area: e;
+			}
+			.item-f {
+				grid-area: f;
+			}
+			.item-g {
+				grid-area: g;
+			}
+			.item-a {
+				grid-area: h;
+			}
+			.item-b {
+				grid-area: i;
+			}
+			.item-c {
+				grid-area: j;
+			}
+			.item-d {
+				grid-area: k;
+			}
+			.item-e {
+				grid-area: l;
+			}
+			.item-f {
+				grid-area: m;
+			}
+			.item {
+				background-color: rgb(151, 153, 152);
+				padding: 40px 10px;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="el">
-			<div class="elem">1</div>
-			<div class="elem">2</div>
-			<div class="elem">3</div>
-			<div class="elem">4</div>
-			<div class="elem">5</div>
-			<div class="elem">6</div>
+		<div class="grid">
+			<div class="item item-a"></div>
+			<div class="item item-b"></div>
+			<div class="item item-c"></div>
+			<div class="item item-d"></div>
+			<div class="item item-e"></div>
+			<div class="item item-f"></div>
+			<div class="item item-g"></div>
+			<div class="item item-h"></div>
+			<div class="item item-i"></div>
+			<div class="item item-j"></div>
+			<div class="item item-k"></div>
+			<div class="item item-l"></div>
+			<div class="item item-m"></div>
 		</div>
 	</body>
 </html>
