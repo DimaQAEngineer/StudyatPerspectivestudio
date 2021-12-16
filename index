@@ -6,44 +6,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
 			.grid {
-				width: 800px;
-				margin: auto;
+				margin: 30px auto;
+				padding: 15px;
+				width: 500px;
 				display: grid;
-				grid-gap: 15px;
-				grid-template-areas: "a a b b" "c d e f" "g d h f" "i i h f";
-				grid-gap: 30px 10px;
+				grid-template-columns: repeat(3, 150px);
+				grid-template-rows: repeat(3, 100px);
+				justify-content: center;
+				grid-gap: 20px 15px;
+				border: 2px solid rgb(102, 100, 100);
 			}
 			.item-a {
-				grid-area: a;
-			}
-			.item-b {
-				grid-area: b;
-			}
-			.item-c {
-				grid-area: c;
-			}
-			.item-d {
-				grid-area: d;
-			}
-			.item-e {
-				grid-area: e;
-			}
-			.item-f {
-				grid-area: f;
-			}
-			.item-g {
-				grid-area: g;
-			}
-			.item-h {
-				grid-area: h;
-			}
-			.item-i {
-				grid-area: i;
+				justify-self: start;
 			}
 			.item {
 				background-color: rgb(151, 153, 152);
-				padding: 40px 10px;
+				padding: 20px;
+			}
+			.item-e {
+				align-self: center;
+			}
+			.item-i {
+				justify-self: end;
 			}
 		</style>
 	</head>
