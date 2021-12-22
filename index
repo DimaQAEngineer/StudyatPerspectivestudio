@@ -2,7 +2,6 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<style>
@@ -15,18 +14,45 @@
 				margin: 30px;
 				display: grid;
 				justify-content: center;
-				grid-template-columns: repeat(4, 100px);
+				grid-template-columns: repeat(3, 200px);
 				grid-template-rows: repeat(3, 100px);
-				grid-gap: 10px;
+				grid-gap: 20px;
 			}
 			.item {
 				background-color: #ccc;
 				text-align: center;
 				padding: 20px 10px;
 			}
+
+			.active2 {
+				grid-column: 2 / 4;
+				grid-row: 1 / 2;
+			}
 			.active4 {
-				grid-column: 2/5;
-				grid-row: 1/4;
+				grid-column: 2 / 4;
+				grid-row: 2 / 4;
+			}
+
+			.grid1 {
+				margin-left: 15px;
+				display: flex;
+				flex-wrap: wrap;
+				height: 70px;
+				width: 240px;
+				align-content: space-between;
+				justify-content: space-around;
+				margin-left: 15px;
+			}
+			.grid1 > div {
+				border: 1px solid rgb(32, 30, 30);
+				padding: 5px;
+				color: rgb(37, 32, 32);
+			}
+			h4 {
+				margin-left: 20px;
+				margin-top: 35px;
+				margin-bottom: 15px;
+				text-align: left;
 			}
 		</style>
 	</head>
@@ -35,7 +61,19 @@
 			<div class="item active1">1</div>
 			<div class="item active2">2</div>
 			<div class="item active3">3</div>
-			<div class="item active4">4</div>
+			<div class="item active4">
+				<h4>КУПЛЕННЫЕ ТОВАРЫ</h4>
+				<div class="grid1">
+					<div>Сыр</div>
+					<div>Молоко</div>
+					<div>Рис</div>
+					<div>Огурцы</div>
+					<div>Помидоры</div>
+					<div>Салат</div>
+					<div>Апельсины</div>
+				</div>
+			</div>
+			<div class="item active5">5</div>
 		</div>
 	</body>
 </html>
