@@ -14,12 +14,14 @@
 				margin: 30px;
 				display: grid;
 				justify-content: center;
-				grid-template-columns: repeat(4, 100px);
-				grid-template-rows: repeat(2, 100px);
-				grid-gap: 10px;
-				grid-auto-flow: column;
-				grid-auto-rows: 100px;
-				grid-auto-columns: 150px;
+				grid-template: 100px 150px 150px / 100px 100px 100px 100px;
+				grid-gap: 20px;
+			}
+			.active4 {
+				grid-area: 1 / 4 / 4 / 5;
+			}
+			.active8 {
+				grid-area: 3 / 1 / 4 / 4;
 			}
 			.item {
 				background-color: #ccc;
@@ -36,8 +38,5 @@
 			<div class="item active6"></div>
 			<div class="item active7"></div>
 			<div class="item active8"></div>
-			<div class="item active9"></div>
-			<div class="item active10"></div>
-		</div>
 	</body>
-</html>
+	</html>
